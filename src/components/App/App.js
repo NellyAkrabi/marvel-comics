@@ -1,12 +1,10 @@
 
-import { url, urlComics } from "../../constants/api";
-import { getDataApi } from "../../utils/getDataApi";
+import Comics from '../Comics/comics'
 import "./App.css"
 
 class App {
     async render() {
-        const data = await getDataApi.getData(url + urlComics);
-        console.log("result", data);
+       await Comics.render();
     }
 }
 
